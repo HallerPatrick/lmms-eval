@@ -1,0 +1,387 @@
+{
+  "results": {
+    "pisa": {
+      "acc,none": 0.5752212389380531,
+      "acc_stderr,none": 0.018889300383749412,
+      "alias": "pisa"
+    },
+    "pisa_ch": {
+      "alias": " - pisa_ch",
+      "acc,none": 0.4336283185840708,
+      "acc_stderr,none": 0.0468274568330016
+    },
+    "pisa_de": {
+      "alias": " - pisa_de",
+      "acc,none": 0.6194690265486725,
+      "acc_stderr,none": 0.045877082640105586
+    },
+    "pisa_en": {
+      "alias": " - pisa_en",
+      "acc,none": 0.5752212389380531,
+      "acc_stderr,none": 0.04670784627537591
+    },
+    "pisa_es": {
+      "alias": " - pisa_es",
+      "acc,none": 0.6460176991150443,
+      "acc_stderr,none": 0.04518600758700765
+    },
+    "pisa_fr": {
+      "alias": " - pisa_fr",
+      "acc,none": 0.5929203539823009,
+      "acc_stderr,none": 0.046422536073530606
+    },
+    "pisa_it": {
+      "alias": " - pisa_it",
+      "acc,none": 0.584070796460177,
+      "acc_stderr,none": 0.046572917212703686
+    }
+  },
+  "groups": {
+    "pisa": {
+      "acc,none": 0.5752212389380531,
+      "acc_stderr,none": 0.018889300383749412,
+      "alias": "pisa"
+    }
+  },
+  "group_subtasks": {
+    "pisa": [
+      "pisa_de",
+      "pisa_fr",
+      "pisa_it",
+      "pisa_en",
+      "pisa_es",
+      "pisa_ch"
+    ]
+  },
+  "configs": {
+    "pisa_ch": {
+      "task": "pisa_ch",
+      "task_alias": "pisa_ch",
+      "dataset_path": "VapeLounge/pisa_mcq_translated_v1.1",
+      "test_split": "ch",
+      "full_docs": false,
+      "process_results_use_image": false,
+      "doc_to_visual": "<function pisa_doc_to_visual at 0x7f8a1b10e700>",
+      "doc_to_text": "<function pisa_doc_to_text at 0x7f8a1b10c860>",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "process_results": "<function pisa_process_results at 0x7f8a1b10d8a0>",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "max_new_tokens": 512,
+        "until": [
+          "<|endoftext|>"
+        ]
+      },
+      "repeats": 1,
+      "should_decontaminate": false
+    },
+    "pisa_de": {
+      "task": "pisa_de",
+      "task_alias": "pisa_de",
+      "dataset_path": "VapeLounge/pisa_mcq_translated_v1.1",
+      "test_split": "de",
+      "full_docs": false,
+      "process_results_use_image": false,
+      "doc_to_visual": "<function pisa_doc_to_visual at 0x7f8a18612c00>",
+      "doc_to_text": "<function pisa_doc_to_text at 0x7f8a18610d60>",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "process_results": "<function pisa_process_results at 0x7f8a18611c60>",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "max_new_tokens": 512,
+        "until": [
+          "<|endoftext|>"
+        ]
+      },
+      "repeats": 1,
+      "should_decontaminate": false
+    },
+    "pisa_en": {
+      "task": "pisa_en",
+      "task_alias": "pisa_en",
+      "dataset_path": "VapeLounge/pisa_mcq_translated_v1.1",
+      "test_split": "en",
+      "full_docs": false,
+      "process_results_use_image": false,
+      "doc_to_visual": "<function pisa_doc_to_visual at 0x7f8a1858fec0>",
+      "doc_to_text": "<function pisa_doc_to_text at 0x7f8a1858f240>",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "process_results": "<function pisa_process_results at 0x7f8a1858f740>",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "max_new_tokens": 512,
+        "until": [
+          "<|endoftext|>"
+        ]
+      },
+      "repeats": 1,
+      "should_decontaminate": false
+    },
+    "pisa_es": {
+      "task": "pisa_es",
+      "task_alias": "pisa_es",
+      "dataset_path": "VapeLounge/pisa_mcq_translated_v1.1",
+      "test_split": "es",
+      "full_docs": false,
+      "process_results_use_image": false,
+      "doc_to_visual": "<function pisa_doc_to_visual at 0x7f8a1858d120>",
+      "doc_to_text": "<function pisa_doc_to_text at 0x7f8a187231a0>",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "process_results": "<function pisa_process_results at 0x7f8a1858c2c0>",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "max_new_tokens": 512,
+        "until": [
+          "<|endoftext|>"
+        ]
+      },
+      "repeats": 1,
+      "should_decontaminate": false
+    },
+    "pisa_fr": {
+      "task": "pisa_fr",
+      "task_alias": "pisa_fr",
+      "dataset_path": "VapeLounge/pisa_mcq_translated_v1.1",
+      "test_split": "fr",
+      "full_docs": false,
+      "process_results_use_image": false,
+      "doc_to_visual": "<function pisa_doc_to_visual at 0x7f8a185d6c00>",
+      "doc_to_text": "<function pisa_doc_to_text at 0x7f8a185d4d60>",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "process_results": "<function pisa_process_results at 0x7f8a185d5c60>",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "max_new_tokens": 512,
+        "until": [
+          "<|endoftext|>"
+        ]
+      },
+      "repeats": 1,
+      "should_decontaminate": false
+    },
+    "pisa_it": {
+      "task": "pisa_it",
+      "task_alias": "pisa_it",
+      "dataset_path": "VapeLounge/pisa_mcq_translated_v1.1",
+      "test_split": "it",
+      "full_docs": false,
+      "process_results_use_image": false,
+      "doc_to_visual": "<function pisa_doc_to_visual at 0x7f8a18562ca0>",
+      "doc_to_text": "<function pisa_doc_to_text at 0x7f8a185620c0>",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "process_results": "<function pisa_process_results at 0x7f8a185623e0>",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "max_new_tokens": 512,
+        "until": [
+          "<|endoftext|>"
+        ]
+      },
+      "repeats": 1,
+      "should_decontaminate": false
+    }
+  },
+  "versions": {
+    "pisa_ch": "Yaml",
+    "pisa_de": "Yaml",
+    "pisa_en": "Yaml",
+    "pisa_es": "Yaml",
+    "pisa_fr": "Yaml",
+    "pisa_it": "Yaml"
+  },
+  "n-shot": {
+    "pisa_ch": 0,
+    "pisa_de": 0,
+    "pisa_en": 0,
+    "pisa_es": 0,
+    "pisa_fr": 0,
+    "pisa_it": 0
+  },
+  "higher_is_better": {
+    "pisa": {
+      "acc": true
+    },
+    "pisa_ch": {
+      "acc": true
+    },
+    "pisa_de": {
+      "acc": true
+    },
+    "pisa_en": {
+      "acc": true
+    },
+    "pisa_es": {
+      "acc": true
+    },
+    "pisa_fr": {
+      "acc": true
+    },
+    "pisa_it": {
+      "acc": true
+    }
+  },
+  "n-samples": {
+    "pisa_de": {
+      "original": 113,
+      "effective": 113
+    },
+    "pisa_fr": {
+      "original": 113,
+      "effective": 113
+    },
+    "pisa_it": {
+      "original": 113,
+      "effective": 113
+    },
+    "pisa_en": {
+      "original": 113,
+      "effective": 113
+    },
+    "pisa_es": {
+      "original": 113,
+      "effective": 113
+    },
+    "pisa_ch": {
+      "original": 113,
+      "effective": 113
+    }
+  },
+  "config": {
+    "model": "vllm",
+    "model_args": "model=Qwen/Qwen2-VL-7B-Instruct",
+    "batch_size": "1",
+    "batch_sizes": [],
+    "device": null,
+    "use_cache": null,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": "",
+    "random_seed": 0,
+    "numpy_seed": 1234,
+    "torch_seed": 1234,
+    "fewshot_seed": 1234
+  },
+  "git_hash": "99f93c7",
+  "date": "20250925_173527",
+  "task_hashes": {
+    "pisa_de": "f87a92ce18bf108928773cd80f22c39aa3daf860c4dffa90bd4e59b11ce30102",
+    "pisa_fr": "f87a92ce18bf108928773cd80f22c39aa3daf860c4dffa90bd4e59b11ce30102",
+    "pisa_it": "f87a92ce18bf108928773cd80f22c39aa3daf860c4dffa90bd4e59b11ce30102",
+    "pisa_en": "f87a92ce18bf108928773cd80f22c39aa3daf860c4dffa90bd4e59b11ce30102",
+    "pisa_es": "f87a92ce18bf108928773cd80f22c39aa3daf860c4dffa90bd4e59b11ce30102",
+    "pisa_ch": "f87a92ce18bf108928773cd80f22c39aa3daf860c4dffa90bd4e59b11ce30102"
+  },
+  "model_source": "vllm",
+  "model_name": "Qwen/Qwen2-VL-7B-Instruct",
+  "model_name_sanitized": "Qwen__Qwen2-VL-7B-Instruct",
+  "system_instruction": null,
+  "system_instruction_sha": null,
+  "fewshot_as_multiturn": false,
+  "chat_template": null,
+  "chat_template_sha": null,
+  "start_time": 853018.659094863,
+  "end_time": 853941.157246817,
+  "total_evaluation_time_seconds": "922.4981519540306"
+}
